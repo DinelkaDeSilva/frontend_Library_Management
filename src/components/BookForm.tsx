@@ -50,7 +50,7 @@ const BookForm: React.FC<BookFormProps> = ({ book, onSubmit, onCancel }) => {
     
     setErrors(newErrors);
     
-    // If no errors, submit
+    // If no errors,submit
     if (!newErrors.title && !newErrors.author && !newErrors.description) {
       onSubmit({ title, author, description });
     }
